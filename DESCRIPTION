@@ -24,6 +24,7 @@ Imports:
          parallel,
          doParallel,
          foreach
+
 Description: We design this package for users who want to get gene regulatory networks for their data. In the package, there are three functions scGRN_interaction, scGRN_getTF and scGRN_getNt. The function scGRN_interaction is used to get promoters and enhancers for target genes. Then the sceond function makes use of the output of the first one, which will find transcription factors for corresponding enhancers and promoters. The last function will get the network for the data. Besides, some sample datasets are also included which are inputs or outputs of these function.
 Depends: R (>= 3.5.0)
 License: GPL-2 

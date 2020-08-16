@@ -20,6 +20,19 @@
 #' enhancer_TF is list.
 #' @seealso JASPAR2018, TFBSTools
 #' @export
+#' 
+#' @import motifmatchr
+#' @import BSgenome.Hsapiens.UCSC.hg19
+#' @import JASPAR2018
+#' @import  GenomicRanges 
+#' @import  GenomeInfoDb 
+#' @import  data.table
+#' @import  dplyr 
+#' @import  IRanges 
+#' @import TFBSTools 
+#' @import parallel
+#' @import doParallel
+#' @import foreach
 #'
 
 scGRN_getTF <- function(df, database = JASPAR2018::JASPAR2018, species_type = 9606, min_score = 0.9,

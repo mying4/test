@@ -23,6 +23,14 @@
 #' @seealso glmnet
 #' @export
 #'
+#' @import glmnet
+#' @import biomaRt 
+#' @import data.table
+#' @import dplyr 
+#' @import parallel
+#' @import doParallel
+#' @import foreach
+#' 
 
 scGRN_getNt <- function(df, gexpr, df_gene_id = 'hgnc_symbol', gexpr_gene_id = 'hgnc_symbol',
                         cutoff_by = 'quantile', cutoff_percentage = 0.9, cutoff_absolute = 0.1,
